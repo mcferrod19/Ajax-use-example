@@ -1,0 +1,106 @@
+$font-family: 'Josefin Sans', sans-serif;
+$title-font-size: 3em;
+$title-font-color:white;
+
+$subtitle-font-size: 1em;
+$subtitle-font-color:white;
+
+$p-font-size: 0.5em;
+$p-font-color:white ;
+
+$backgroundo-color-container:rgb(184, 186, 188);
+
+*{
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: $font-family;
+
+}
+
+img{
+  width: 7em;
+  margin-top: 0.5em;
+  border-radius: 1em;
+  border-color: white;
+
+
+}
+
+.container{
+  max-width: 100%;
+  background-color: $backgroundo-color-container;
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+
+}
+.search{
+width: 90%;
+}
+
+.input-container{
+  display:flex;
+  flex-direction: row;
+  border-radius: 2em;
+  padding-bottom: 2em;
+}
+
+.input-insert-name{
+background-color:white;
+border-radius: .5em;
+border-style: none;
+color:$backgroundo-color-container;
+width: 80%;
+font-size: 1em;
+margin-left: 3em;
+padding-left: 4em;
+}
+
+.buttonSubmit{
+  background: none;
+  border: none;
+}
+
+.image-send{
+  height: 3em;
+  :hover{
+    transform:rotation(60deg);
+
+  }
+}
+h1{
+  font-size: $title-font-size;
+  color:$title-font-color;
+  margin-left: 1em;
+
+}
+h2{
+  font-size: $subtitle-font-size;
+  color:$title-font-color;
+}
+h3{
+  font-size: $subtitle-font-size;
+  color:$title-font-color;
+  text-align: left;
+}
+.results{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.inline{
+  display: flex;
+  justify-content:space-between;
+  flex-direction:row;
+
+}
+.user-photo{
+
+  ::before{
+    width: 4em;
+
+}
+}

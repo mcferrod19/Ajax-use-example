@@ -9,15 +9,19 @@ var photo = document.getElementById('photo');
 var numberRepo = document.getElementById('number-repo');
 
 function submit() {
-  var urlApi = 'https://api.github.com/users/' + inputValue;
+  var urlApi = "https://api.github.com/users/" + inputValue;
   var request = new XMLHttpRequest();
   request.open('GET', urlApi, true);
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
       var data = JSON.parse(request.responseText);
-      userName.innerHTML = data.name;
+      if (userName.innerHTML = " "){
+        userName.innerHTML= "Sin nombre";
+      }else{
+        userName.innerHTML = data.name;
+      }
       photo.innerHTML = "<img src=" + data.avatar_url + ">";
-      numberRepo.innerHTML = data.public_repos;
+      numberRepo.innerHTML = "Número de repositiorios" + " " + data.public_repos;
     } else {
       console.log('Error del servidor, puede que el archivo no exista o que se haya producido un error interno en el servidor');
     }

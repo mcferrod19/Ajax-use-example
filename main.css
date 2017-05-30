@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: justify;
+  font-family: "Josefin Sans", sans-serif; }
+
+img {
+  width: 7em;
+  margin-top: 0.5em;
+  border-radius: 1em;
+  border-color: white; }
+
+.container {
+  max-width: 100%;
+  background-color: #b8babc;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.search {
+  width: 90%; }
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 2em;
+  padding-bottom: 2em; }
+
+.input-insert-name {
+  background-color: white;
+  border-radius: .5em;
+  border-style: none;
+  color: #b8babc;
+  width: 80%;
+  font-size: 1em;
+  margin-left: 3em;
+  padding-left: 4em; }
+
+.buttonSubmit {
+  background: none;
+  border: none; }
+
+.image-send {
+  height: 3em; }
+  .image-send :hover {
+    -webkit-transform: rotation(60deg);
+            transform: rotation(60deg); }
+
+h1 {
+  font-size: 3em;
+  color: white;
+  margin-left: 1em; }
+
+h2 {
+  font-size: 1em;
+  color: white; }
+
+h3 {
+  font-size: 1em;
+  color: white;
+  text-align: left; }
+
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.user-photo ::before {
+  width: 4em; }
+
+/*# sourceMappingURL=main.css.map */

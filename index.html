@@ -3,21 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Exercise Json</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-  <h1>Buscador de Usuarios en GitHub</h1>Buscador
+    <div class="container">
 
-    <input id="input-name" type="text" name="seach-input" value="">
-    <button id="buttonSubmit" type="submit" value="Enviar"></button>
+      <div class="search">
+        <h1>Buscador de Usuarios en GitHub</h1>
 
-    <h2>Resultados</h2>
-      <h3>Nombre de usuario</h3>
-      <h3 id="name"></h3>
-      <h3>Fotografía</h3>
-      <img id="photo"></h3>
-      <h3>Número de repositiorios</h3>
-      <h3 id="number-repo"></h3>
+          <div class="input-container">
+                <input class="input-insert-name" id="input-name" type="text" name="seach-input" value="">
+                <button class="buttonSubmit" id="buttonSubmit" type="submit" value="Enviar"><img class="image-send" src="send.png" alt=""></button>
+          </div>
+      </div>
+
+      <div class="results">
+
+        <!-- <h3>Fotografía</h3> -->
+        <img class="user-photo" id="photo">
+
+        <!-- <span class="inline"><h3>Nombre de usuario</h3><br> -->
+        <h3 id="name"></h3></span>
+
+        <!-- <span class="inline"><h3>Número de repositiorios</h3><br> -->
+        <h3 id="number-repo"></h3>
+        </span>
+      </div>
+  </div>
   <script src="js/main.js" charset="utf-8"></script>
-  </body>
+</body>
 
 </html>
